@@ -28,7 +28,7 @@ class Bot(Client):
             try:
                 link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
                 self.invitelink = link
-            except Exception as a
+            except Exception as a:
                 sys.exit()
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
